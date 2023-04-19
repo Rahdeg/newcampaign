@@ -38,8 +38,8 @@ const page: FC<pageProps> = ({  }) => {
 </div>
 </div>
     </div>
-    <div className='bg-[#FCFBFC] flex  w-full px-6 mb-14'>
-      <div className='flex mt-12 gap-8 w-full'>
+    <div className='bg-[#FCFBFC] flex  w-full px-6 mb-14 items-center justify-center'>
+      <div className='flex mt-12 gap-8 w-full  justify-around'>
       <Todo/>
       <Inprogress/>
       <Completed/>

@@ -15,7 +15,7 @@ const Inprogress: FC<InprogressProps> = ({  }) => {
    <p className='text-xl font-bold'>In progress</p>
    <div className='rounded-md h-4 w-4 bg-black p-3 text-white  flex items-center justify-center'>1</div>
     </Button>
-    <HighfidelityCard icon={Icons.Oslider} image={Icons.cardImage}/>
+    <HighfidelityCard icon={Icons.Oslider} image={Icons.cardImage1}/>
     <Button className='flex items-center justify-center mt-2 gap-3' variant='dotted'>
       {Icons.Plus}
       Add Task
