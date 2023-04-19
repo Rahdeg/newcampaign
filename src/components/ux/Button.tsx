@@ -8,7 +8,9 @@ export const buttonVariants = cva("active:scale-95 inline-flex items-center just
     variants:{
         variant:{
             default:'bg-slate-900 text-white bg-[#45269C] hover:bg-slate-800',
-            ghost:"bg-transparent hover:text-slate-900 hover:bg-slate-200",
+            black:"bg-black text-white" ,
+            white:'bg-[#F4F6F8] text-[#858A93]',
+            dotted:'bg-[#D5D5D5] text-[#7D8088] border border-gray-500 border-dashed',
         },
         size:{
             default:'h-10 py-2 px-4',

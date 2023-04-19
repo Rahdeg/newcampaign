@@ -3,13 +3,14 @@ import React, { FC } from 'react'
 interface IconTextProps {
   icon:React.ReactNode
   text:string
+  bg?:string
 }
 
-const IconText: FC<IconTextProps> = ({ icon, text }) => {
+const IconText: FC<IconTextProps> = ({ icon, text,bg }) => {
   return (
-    <div className="flex items-center space-x-3">
+    <div className="flex items-center space-x-2">
     {icon}
-    <span className=" text-gray-800 font-semibold">{text}</span>
+    <span className={ `font-semibold ${bg ? 'text-white':'text-[#7D8088]'}`}>{text}</span>
   </div>
   )
 }

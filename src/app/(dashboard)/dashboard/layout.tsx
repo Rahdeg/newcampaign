@@ -10,8 +10,8 @@ interface layoutProps {
 
 const layout: FC<layoutProps> = ({children}) => {
   return (
-    <div className='w-full flex h-screen border rounded-2xl bg-[#FFFFFF]'>
-    <div className='flex h-full w-full max-w-xs grow flex-col gap-y-5 overflow-y-auto border-r rounded-l-2xl border-gray-200 bg-[#1D1042] px-6'>
+    <div className='w-full flex border rounded-2xl bg-[#FFFFFF]'>
+    <div className='flex w-72 max-w-xs grow flex-col gap-y-5 overflow-y-auto border-r rounded-l-2xl border-gray-200 bg-[#1D1042] px-6'>
       <Button className='flex mt-10 items-center justify-center gap-3'>
      {Icons.Logo}
       Welcome Raheem
@@ -20,44 +20,44 @@ const layout: FC<layoutProps> = ({children}) => {
     <ul role='list' className='flex flex-1 flex-col gap-y-7'>
     <li className='mx-4'>
       <Link href='/dashboard'>
-      <IconText icon={Icons.Dashboard} text='Dashboard'/>
+      <IconText icon={Icons.Dashboard} text='Dashboard' bg='bg'/>
       </Link>
     </li>
     <li className='mx-4'>
       <Link href='/dashboard/settings'>
-      <IconText icon={Icons.settings} text='Settings'/>
+      <IconText icon={Icons.settings} text='Settings' bg='bg'/>
       </Link>
       </li>
     <li className='mx-4'>
       <Link href='/dashboard/activities'>
-      <IconText icon={Icons.Activities} text='Activities'/>
+      <IconText icon={Icons.Activities} text='Activities' bg='bg'/>
       </Link>
       </li>
     <li className='mx-4'>
       <Link href='/dashboard/users'>
-      <IconText icon={Icons.User} text='Users'/>
+      <IconText icon={Icons.User} text='Users' bg='bg'/>
       </Link>
       </li>
     <li className='mx-4'>
       <Link href='/dashboard/addUsers'>
-      <IconText icon={Icons.AddUser} text='Added user'/>
+      <IconText icon={Icons.AddUser} text='Added user' bg='bg'/>
       </Link>
       
       </li>
     <li className='mx-4'>
       <Link href='/dashboard/affiliates'>
-      <IconText icon={Icons.Affiliate} text='Affiliate'/>
+      <IconText icon={Icons.Affiliate} text='Affiliate' bg='bg'/>
       </Link>
       </li>
     <li className=' border-b-2 mt-2'/>
     <li className='mx-4'>
       <Link href='/dashboard/profile'>
-      <IconText icon={Icons.Logo} text='Profile'/>
+      <IconText icon={Icons.Logo} text='Profile' />
       </Link>
       </li>
     <li className='mx-4'>
       <Link href='/dashboard'>
-      <IconText icon={Icons.User} text='Logout'/>
+      <IconText icon={Icons.User} text='Logout' />
       </Link>
       </li>
     <li className='-mx-6 mt-auto flex items-center justify-center'>
@@ -72,7 +72,7 @@ const layout: FC<layoutProps> = ({children}) => {
     </ul>
   </nav>
     </div>
-     {children}
+    {children}
     </div>
   )
 }

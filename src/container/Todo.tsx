@@ -2,6 +2,9 @@ import Button from '@/components/ux/Button';
 import React, { FC } from 'react'
 import HighfidelityCard from '../components/HighfidelityCard'
 import Icons from '@/components/Icons';
+import IconText from '@/components/IconText';
+import Image from 'next/image';
+import UsabilityCard from '@/components/UsabilityCard';
 
 interface TodoProps {
   
@@ -9,12 +12,17 @@ interface TodoProps {
 
 const Todo: FC<TodoProps> = ({  }) => {
   return (
-    <div className='flex flex-col mt-32'>
-     <Button className=' flex justify-between' variant='ghost'>
-    <p>To Do</p>
-    <div className='border  rounded-md h-2 w-5 p-2 text-white bg-black'>3</div>
+    <div className='flex flex-col'>
+     <Button className=' flex items-center justify-between ' variant='white'>
+    <p className=' text-xl font-bold'>To Do</p>
+    <div className='rounded-md h-4 w-4 bg-black p-3 text-white  flex items-center justify-center'>3</div>
      </Button>
-     <HighfidelityCard icon={Icons.Oslider}/>
+     <HighfidelityCard icon={Icons.Wslider} image={Icons.cardImage}/>
+   <UsabilityCard icon={Icons.Wslider}/>
+    <Button className='flex items-center justify-center mt-2 gap-3 ' variant='dotted'>
+      {Icons.Plus}
+      Add Task
+    </Button>
     </div>
    
   )

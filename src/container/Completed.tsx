@@ -2,6 +2,9 @@ import Button from '@/components/ux/Button';
 import React, { FC } from 'react'
 import HighfidelityCard from '../components/HighfidelityCard'
 import Icons from '@/components/Icons';
+import IconText from '@/components/IconText';
+import Image from 'next/image';
+import UsabilityCard from '@/components/UsabilityCard';
 
 interface CompletedProps {
   
@@ -10,11 +13,16 @@ interface CompletedProps {
 const Completed: FC<CompletedProps> = ({  }) => {
   return (
     <div className='flex flex-col mt-32' >
-    <Button className=' flex justify-between' variant='ghost'>
-   <p className='text-red-300'>To Do</p>
-   <p className='bg-black'>3</p>
+    <Button className=' flex justify-between' variant='white'>
+   <p className='text-xl font-bold'>Completed</p>
+   <div className='rounded-md h-4 w-4 bg-black p-3 text-white  flex items-center justify-center'>2</div>
     </Button>
-    <HighfidelityCard icon={Icons.Oslider}/>
+    <UsabilityCard icon={Icons.Gnslider}/>
+    <HighfidelityCard icon={Icons.Gnslider} image={Icons.cardImage}/>
+    <Button className='flex items-center justify-center mt-2 gap-3' variant='dotted'>
+      {Icons.Plus}
+      Add Task
+    </Button>
    </div>
   
   )

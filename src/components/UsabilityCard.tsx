@@ -1,29 +1,24 @@
-import Image from 'next/image';
-import React from 'react';
+import React, { FC } from 'react'
 import IconText from './IconText';
 import Icons from './Icons';
-import type { StaticImageData } from "next/image"
+import Image from 'next/image';
 
-interface Props {
-  icon: React.ReactNode;
-  image: StaticImageData;
+interface UsabilityCardProps {
+    icon: React.ReactNode;
 }
 
-const ImageTextIconComponent: React.FC<Props> = ({ icon ,image}) => {
+const UsabilityCard: FC<UsabilityCardProps> = ({ icon }) => {
   return (
-    <div className='flex bg-white border rounded-xl mt-5'>
-    <div className="flex flex-col p-4">
-      <div className="flex-1 relative">
-        <Image src={image} alt="Image" className="max-w-full h-auto"/>
-      </div>
+    <div className='flex bg-white border rounded-xl mt-5 w-full'>
+    <div className="flex flex-col p-3 w-full">
       <div className="flex flex-col">
-        <div className="text-black font-semibold text-xl my-1">Highfiderlity Design</div>
+        <div className="text-black font-semibold text-xl my-1">Usability testing</div>
         <div className="text-[#B8B9BD]">Make clear design and color</div>
       </div>
       <div className="flex flex-col mt-2">
         <div className='flex items-center justify-between'>
         <IconText icon={Icons.Check} text='Progress'/>
-        <p className="text-black font-semibold  ">2/10</p>
+        <p className="text-black font-semibold ">2/10</p>
         </div>
         <div className=" w-full my-3 border rounded-3xl">{icon}</div>
         <div className='flex justify-between'>
@@ -36,7 +31,7 @@ const ImageTextIconComponent: React.FC<Props> = ({ icon ,image}) => {
       </div>
     </div>
     </div>
-  );
-};
+  )
+}
 
-export default ImageTextIconComponent;
+export default UsabilityCard;
