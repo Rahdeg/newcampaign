@@ -9,7 +9,7 @@ interface UsabilityCardProps {
 
 const UsabilityCard: FC<UsabilityCardProps> = ({ icon }) => {
   return (
-    <div className='flex bg-white border rounded-xl mt-5 w-full'>
+    <div className='flex bg-white border rounded-xl mt-5 w-full xl:w-[320px] xxl:w-[480px]'>
     <div className="flex flex-col p-3 w-full">
       <div className="flex flex-col">
         <div className="text-black font-semibold text-xl my-1">Usability testing</div>

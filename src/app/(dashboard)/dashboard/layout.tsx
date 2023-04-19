@@ -11,7 +11,7 @@ interface layoutProps {
 const layout: FC<layoutProps> = ({children}) => {
   return (
     <div className='w-full flex border rounded-2xl bg-[#FFFFFF]'>
-    <div className='flex w-72 max-w-xs grow flex-col gap-y-5 overflow-y-auto border-r rounded-l-2xl border-gray-200 bg-[#1D1042] px-6'>
+    <div className='flex w-72  max-w-xs grow flex-col gap-y-5 overflow-y-auto border-r rounded-l-2xl border-gray-200 bg-[#1D1042] px-6'>
       <Button className='flex mt-10 items-center justify-center gap-3'>
      {Icons.Logo}
       Welcome Raheem

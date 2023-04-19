@@ -11,10 +11,10 @@ interface Props {
 
 const ImageTextIconComponent: React.FC<Props> = ({ icon ,image}) => {
   return (
-    <div className='flex bg-white border rounded-xl mt-5'>
-    <div className="flex flex-col p-4">
-      <div className="flex-1 relative w-56 h-40 ">
-        <Image src={image} alt="Image" className="max-w-full h-auto"/>
+    <div className='flex bg-white border rounded-xl mt-5 xl:w-[320px] xxl:w-[480px]'>
+    <div className="flex flex-col p-4 xl:w-[320px] xxl:w-[480px]">
+      <div className="flex-1 relative w-56 h-28  xl:w-[320px] xxl:w-[480px] ">
+        <Image src={image} alt="Image" className="" />
       </div>
       <div className="flex flex-col">
         <div className="text-black font-semibold text-xl my-1">Highfiderlity Design</div>
