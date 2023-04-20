@@ -1,6 +1,6 @@
 "use client"
 import Button from '@/components/ux/Button';
-import React, { FC } from 'react'
+import React, { FC, useEffect, useState } from 'react'
 import HighfidelityCard from '../components/HighfidelityCard'
 import Icons from '@/components/Icons';
 
@@ -10,7 +10,13 @@ interface InprogressProps {
 }
 
 const Inprogress: FC<InprogressProps> = ({  }) => {
-  const windowWidth = window.innerWidth
+  const [windowWidth, setwindowWidth] = useState<number>(0)
+
+  useEffect(() => {
+    const windowWidth = window.innerWidth
+    setwindowWidth(windowWidth)
+  }, [])
+  
   return (
     <div className='flex flex-col xxl:w-[480px]'>
     <Button className=' flex justify-between' variant='white'>

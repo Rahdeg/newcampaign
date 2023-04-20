@@ -10,8 +10,14 @@ interface TodoProps {
 }
 
 const Todo: FC<TodoProps> = ({  }) => {
+  const [windowWidth, setwindowWidth] = useState<number>(0)
 
-  const windowWidth = window.innerWidth
+  useEffect(() => {
+    const windowWidth = window.innerWidth
+    setwindowWidth(windowWidth)
+  }, [])
+  
+ 
   return (
     <div className='flex flex-col  xl:w-[320px] xxl:w-[480px]'>
      <Button className=' flex items-center justify-between xl:w-[320px] xxl:w-[480px]' variant='white'>
@@ -19,7 +25,7 @@ const Todo: FC<TodoProps> = ({  }) => {
     <div className='rounded-md h-4 w-4 bg-black p-3 text-white  flex items-center justify-center'>3</div>
      </Button>
      <div className=' xxl:hidden'>
-     <HighfidelityCard icon={Icons.Wslider} image={windowWidth <= 1290 ? Icons.SmallcardImage :windowWidth <= 1440 ? Icons.mdcardImage: windowWidth > 1440 ? Icons.largecardImage :Icons.SmallcardImage }/>
+     <HighfidelityCard icon={Icons.Wslider} image={windowWidth > 1290 ? Icons.mdcardImage :windowWidth > 1440 ? Icons.largecardImage: Icons.SmallcardImage }/>
      </div>
      
    <UsabilityCard icon={Icons.Wslider}/>

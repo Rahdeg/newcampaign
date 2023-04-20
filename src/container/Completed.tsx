@@ -1,6 +1,6 @@
 "use client"
 import Button from '@/components/ux/Button';
-import React, { FC } from 'react'
+import React, { FC, useEffect, useState } from 'react'
 import HighfidelityCard from '../components/HighfidelityCard'
 import Icons from '@/components/Icons';
 import UsabilityCard from '@/components/UsabilityCard';
@@ -10,7 +10,14 @@ interface CompletedProps {
 }
 
 const Completed: FC<CompletedProps> = ({  }) => {
-  const windowWidth = window.innerWidth
+  const [windowWidth, setwindowWidth] = useState<number>(0)
+
+  useEffect(() => {
+    const windowWidth = window.innerWidth
+    setwindowWidth(windowWidth)
+  }, [])
+  
+
   return (
     <div className='flex flex-col  xl:w-[320px] xxl:w-[480px]' >
     <Button className=' flex items-center justify-between xl:w-[320px] xxl:w-[480px]' variant='white'>
