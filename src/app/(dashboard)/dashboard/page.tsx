@@ -38,7 +38,7 @@ const page: FC<pageProps> = ({  }) => {
 </div>
 </div>
     </div>
-    <div className='bg-[#FCFBFC] flex px-6 mb-14  items-center justify-center'>
+    <div className='bg-[#FCFBFC] flex px-7 mb-14  items-center justify-center'>
       <div className='flex mt-12  w-full  justify-around'>
       <Todo/>
       <Inprogress/>
