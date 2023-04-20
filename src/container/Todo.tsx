@@ -3,8 +3,6 @@ import Button from '@/components/ux/Button';
 import React, { FC, useEffect, useState } from 'react'
 import HighfidelityCard from '../components/HighfidelityCard'
 import Icons from '@/components/Icons';
-import IconText from '@/components/IconText';
-import Image, { StaticImageData } from 'next/image';
 import UsabilityCard from '@/components/UsabilityCard';
 
 interface TodoProps {
