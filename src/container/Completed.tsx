@@ -3,8 +3,6 @@ import Button from '@/components/ux/Button';
 import React, { FC } from 'react'
 import HighfidelityCard from '../components/HighfidelityCard'
 import Icons from '@/components/Icons';
-import IconText from '@/components/IconText';
-import Image from 'next/image';
 import UsabilityCard from '@/components/UsabilityCard';
 
 interface CompletedProps {
