@@ -16,7 +16,7 @@ const Mobile: FC<MobileProps> = ({  }) => {
 
    
   return (
-    <div className='flex flex-row justify-between fixed w-full z-10 lg:hidden p-2 border-b-[1px] bg-white '>
+    <div className='flex flex-row justify-between fixed w-full z-10 lg:hidden p-2 border-b-[1px] bg-[#F4F6F8] '>
 <div className='flex flex-col'>
     <h1 className=' text-base font-bold '>New Campaign Run</h1>
 <p className=' text-[#B8B9BD] mt-1  text-xs'>A new campaign launch work ....</p>
